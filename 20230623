@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Information</title>
+</head>
+<body>
+  <h1>Contact Information</h1>
+  <p>Name: John Doe</p>
+  <p>Email: johndoe@example.com</p>
+  <p>Phone: +1234567890</p>
+  <button id="add-contact-btn">Add to Address Book</button>
+
+  <script>
+    // ボタン要素を取得する
+    const addContactButton = document.getElementById('add-contact-btn');
+
+    // ボタンがクリックされたときの処理を定義する
+    addContactButton.addEventListener('click', () => {
+      const contact = {
+        name: 'John Doe',
+        email: 'johndoe@example.com',
+        phone: '+1234567890'
+      };
+
+      // アドレス帳に連絡先を追加する処理を実行する
+      // ここで具体的な実装方法は、デバイスのプラットフォーム（iOS、Android）に依存します
+      // ネイティブアプリ開発や外部のライブラリを使用する必要があるかもしれません
+      // それについては、各プラットフォームのドキュメントやリソースを参照してください
+      console.log('Contact added to address book:', contact);
+    });
+  </script>
+</body>
+</html>
